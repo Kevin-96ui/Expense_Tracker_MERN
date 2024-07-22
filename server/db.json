@@ -1,0 +1,64 @@
+{
+  "expenses": [
+    {
+      "expenseType": "home",
+      "amount": "1000",
+      "type": "profit",
+      "description": "1k rent",
+      "userId": "a57b",
+      "id": 1
+    },
+    {
+      "type": "loss",
+      "expenseType": "car",
+      "amount": "1000",
+      "description": "Car EMI",
+      "userId": "6794",
+      "id": 2
+    },
+    {
+      "type": "profit",
+      "expenseType": "education",
+      "amount": "20",
+      "description": "",
+      "userId": "6794",
+      "id": 3
+    },
+    {
+      "type": "loss",
+      "expenseType": "car",
+      "amount": "2000",
+      "description": "Car wash",
+      "userId": "DXf6fn1",
+      "id": 4
+    },
+    {
+      "type": "loss",
+      "expenseType": "home",
+      "amount": "20",
+      "description": "",
+      "userId": "",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "username": "Kevin",
+      "password": "Kevin",
+      "id": "a57b",
+      "email": "kevin@gmail.com"
+    },
+    {
+      "username": "Pugal",
+      "email": "pugalp702@gmail.com",
+      "password": "Pugal",
+      "id": "6794"
+    },
+    {
+      "username": "Viwin",
+      "password": "Viwin",
+      "email": "viwin2p@gmail.com",
+      "id": "DXf6fn1"
+    }
+  ]
+}
