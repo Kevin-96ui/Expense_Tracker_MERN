@@ -2,12 +2,20 @@ const Expense = require("../model/expense.model.js");
 
 const getExpenses = async (req, res) => {
   try {
-    const expenses = await Expense.find();
+    const { type, expenseType, email } = req.query;
+    const filter = {};
+
+    if (type) filter.type = type;
+    if (expenseType) filter.expenseType = expenseType;
+    if (email) filter.email = email;
+
+    const expenses = await Expense.find(filter);
     res.status(200).json(expenses);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
+
 
 const getExpense = async (req, res) => {
   try {
